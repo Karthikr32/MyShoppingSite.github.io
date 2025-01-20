@@ -1,0 +1,424 @@
+[{
+  "filter-id" : 1,
+  "products" : [{
+                  "product-id" : 10,
+                  "product-name" : "Samsung 301 L 2 Star ?RT34C4522S8",
+                  "imgSrc" : "img/fridge.jpeg" ,
+                  "price" : 37000
+                },
+                {
+                  "product-id" : 11,
+                  "product-name" : "Butterfly Stallion 4J Automatic Mixie",
+                  "imgSrc" : "img/mixie.jpeg",
+                  "price" : 3850
+                },
+                {
+                  "product-id" : 12,
+                  "product-name" : "Butterflys Spectra Glass Top 2 Burner Gas Stove",
+                  "imgSrc" : "img/gasStove.jpeg",
+                  "price" : 6150
+                },
+                {
+                  "product-id" : 13,
+                  "product-name" : "LG 65 inch 164 cm 65UR80PSB 4K Smart TV",
+                  "imgSrc" : "img/LGtv.jpeg",
+                  "price" : 81890
+                },
+                {
+                  "product-id" : 14,
+                  "product-name" : "Haier 8 kg HW80-IM Inverter Washing Machine",
+                  "imgSrc" : "img/washMachine.jpeg",
+                  "price" : 37830
+                },
+                {
+                  "product-id" : 15,
+                  "product-name" : "Voltas 1 Ton 3 star SAC 123V Inverter Split AC",
+                  "imgSrc" : "img/ac.jpeg",
+                  "price" : 33000
+                },
+                {
+                  "product-id" : 51,
+                  "product-name" : "LG MS2043DB, 20 Litres, 700W Solo Microwave Oven", 
+                  "imgSrc" : "img/oven.jpeg",
+                  "price" : 7890
+                },
+                {
+                  "product-id" : 52,
+                  "product-name" : "USHA 48, APOLLO 1 Star, Ceiling Fan", 
+                  "imgSrc" : "img/ushaFan.jpeg",
+                  "price" : 1460
+                }],
+  "keywords" : [
+                   "fridge",
+                   "Tv",
+                   "mixie",
+                   "gas stove",
+                   "fan",
+                   "ceiling fan",
+                   "ac",
+                   "Oven",
+                   "home appliances, furnitures"
+               ]              
+},
+{
+  "filter-id" : 2,
+  "products" : [{
+                 "product-id" : 16,
+                  "product-name" : "Samsung Galaxy S24 Ultra 5G 12GB RAM",
+                  "imgSrc" : "img/samsung-gal2.jpeg",
+                  "price" : 121999
+                },
+                {
+                  "product-id" : 17,
+                  "product-name" : "Apple iPhone 15 Pro 5G, 128 GB ROM",
+                  "imgSrc" : "img/apple-14.jpeg",
+                  "price" : 130999
+                },
+                {
+                  "product-id" : 18,
+                  "product-name" : "Realme 12 Pro 5G 8 GB RAM 256 GB ROM",
+                  "imgSrc" : "img/realme-mob.jpeg",
+                  "price" : 26999
+                },
+                {
+                  "product-id" : 19,
+                  "product-name" : "Vivo V40 8+128 GB 256 GB ROM",
+                  "imgSrc" : "img/vivo.jpeg",
+                  "price" : 34000
+                },
+                {
+                  "product-id" : 20,
+                  "product-name" : "OnePlus Nord CE 3 5G, 8GB, 128GB",
+                  "imgSrc" : "img/oneplus.jpeg",
+                  "price" : 19000
+                },
+                {
+                  "product-id" : 21,
+                  "product-name" : "OPPO F27 5G Emerald Green, 8GB RAM",
+                  "imgSrc" : "img/oppo1.jpeg",
+                  "price" : 22999
+                },
+                {
+                  "product-id" : 53,
+                  "product-name" : "Samsung Galaxy A35 5G 8 GB RAM",
+                  "imgSrc" : "img/samsung-mob.jpeg",
+                  "price" : 30999
+                },
+                {
+                  "product-id" : 54,
+                  "product-name" : "Redmi Note 12 Pro 5G 6GB RAM, 128GB",
+                  "imgSrc" : "img/redmi.jpeg",
+                  "price" : 21499 
+                }],
+  "keywords" : [
+                  "mobiles",
+                  "gadgets",
+                  "Samsung",
+                  "apple",
+                  "oppo",
+                  "vivo",
+                  "realme",
+                  "redmi"
+               ]             
+},
+{
+  "filter-id": 3,
+  "products": [{
+                 "product-id" : 22,
+                 "product-name" : "Apple Series 9 Smart Watch", 
+                 "imgSrc" : "img/apple-sm.jpeg",
+                 "price" : 30999
+               },
+               {
+                 "product-id" : 23,
+                  "product-name" : "Apple Airpods Smart Series", 
+                  "imgSrc" : "img/apple-pods.jpeg",
+                  "price" : 22990
+               },
+               {
+                 "product-id" : 24,
+                 "product-name" : "Sony 5.1 Home Theater", 
+                 "imgSrc" : "img/home-theatre.jpeg",
+                 "price" : 26990
+               },
+               {
+                 "product-id" : 25,
+                 "product-name" : "Dell i3-1215U Laptop", 
+                 "imgSrc" : "img/dell-laptop.jpeg",
+                 "price" : 36990
+               },
+               {
+                 "product-id" : 26,
+                 "product-name" : "HP 1008W Monochrome Laser Printer", 
+                 "imgSrc" : "img/printer1.jpeg",
+                 "price" : 12999
+               },
+               {
+                 "product-id" : 27,
+                 "product-name" : "Samsung Galaxy 25W 10000 mAh Wireless Power Bank", 
+                 "imgSrc" : "img/samsung-bank.jpeg",
+                 "price" : 2699
+               },
+               {
+                 "product-id" : 55,
+                 "product-name" : "Sandisk 64 GB USB 2.0 Flash Drive, v236w", 
+                 "imgSrc" : "img/sandisk1.jpeg",
+                 "price" : 399
+               },
+               {
+                 "product-id" : 56,
+                 "product-name" : "Aquaguard Superio 5 Litres 45 Watts Water Purifier", 
+                 "imgSrc" : "img/aqua1.jpeg",
+                 "price" : 18500
+               }],
+ "keywords" : [
+                "electronics",
+                "gadgets",
+                "apple series airpods",
+                "apple smart watches",
+                "sony home theater",
+                "dell i3s lap",
+                "sandisk memory card",
+                "HP Laser Printer",
+                "Aquaguard Water Purifier supplier"
+              ]    
+},{
+  "filter-id" : 4,
+  "products" : [{
+                 "product-id" : 28,
+                 "product-name" : "Chicken Briyani", 
+                 "imgSrc" : "img/briyani.jpeg",
+                 "price" : 300
+                },
+                {
+                 "product-id" : 29,
+                 "product-name" : "Dosa", 
+                 "imgSrc" : "img/dosa.jpeg",
+                 "price" : 100 
+                },
+                {
+                 "product-id" : 30,
+                 "product-name" : "Full Meals", 
+                 "imgSrc" : "img/meals.jpeg",
+                 "price" : 180
+                },
+                {
+                "product-id" : 31,
+                "product-name" : "Chicken Momos", 
+                "imgSrc" : "img/momos.jpeg",
+                "price" : 150
+                },
+                {
+                "product-id" : 32,
+                "product-name" : "Pizza", 
+                "imgSrc" : "img/pizza.jpeg",
+                "price" : 350
+                },
+                {
+                "product-id" : 33,
+                "product-name" : "Burger", 
+                "imgSrc" : "img/burger.jpeg",
+                "price" : 200
+                },
+                {
+                  "product-id" : 57,
+                  "product-name" : "Peri Peri Barbeque", 
+                  "imgSrc" : "img/barbeque.jpeg",
+                  "price" : 360
+                },
+                {
+                  "product-id" : 58,
+                  "product-name" : "IBACO 3 in 1 Scoop", 
+                  "imgSrc" : "img/ibaco.jpeg",
+                  "price" : 250
+                }],
+  "keywords" : [
+                  "foods",
+                  "Chicken Briyani",
+                  "dosa",
+                  "full meals",
+                  "ice creams",
+                  "pizza burger"
+                ] 
+},
+{
+  "filter-id" : 5,
+  "products" : [{
+                "product-id" : 34,
+                "product-name" : "Powerlook T-Shirt", 
+                "imgSrc" : "img/t-shirt.jpeg",
+                "price" : 920
+                },
+                {
+                "product-id" : 35,
+                "product-name" : "Raymond Shirts", 
+                "imgSrc" : "img/shirt.jpeg",
+                "price" : 802
+                },
+                {
+                "product-id" : 36,
+                "product-name" : "Style Revolte Jacket", 
+                "imgSrc" : "img/jacket.jpeg",
+                "price" : 1999
+                },
+                {
+                "product-id" : 37,
+                "product-name" : " Pepe Black Jeans", 
+                "imgSrc" : "img/jeans.jpeg",
+                "price" : 999
+                },
+                {
+                  "product-id" : 38,
+                  "product-name" : "Peter England Suit", 
+                  "imgSrc" : "img/mens-coat1.jpeg",
+                  "price" : 7890
+                },
+                {
+                  "product-id" : 59,
+                  "product-name" : "Kurtas & Kurta", 
+                  "imgSrc" : "img/kurtas-mens.jpeg",
+                  "price" : 699
+                },
+                {
+                  "product-id" : 60,
+                  "product-name" : "Ramraj Dhotis", 
+                  "imgSrc" : "img/dhotis.jpeg",
+                  "price" : 489
+                },
+                {
+                "product-id" : 61,
+                "product-name" : "Red Chief Foot Wear", 
+                "imgSrc" : "img/shoes.jpeg",
+                "price" : 1190
+                }],
+  "keywords" : [
+                  "clothes, dress, mens wear, stylish, party wear, casual, traditional",
+                  "Powerlook T-Shirt",
+                  "Raymond Shirts",
+                  "Pepe Black Jeans",
+                  "Red Chief Foot Wear",
+                  "Style Revolte Jacket, Dhotis"
+                ] 
+},
+{
+  "filter-id" : 6,
+  "products" : [{
+                "product-id" : 39,
+                "product-name" : "Silk-Dupatas", 
+                "imgSrc" : "img/dupatas.jpeg",
+                "price" : 558
+                },
+                {
+                "product-id" : 40,
+                "product-name" : "Lehangas", 
+                "imgSrc" : "img/lehanga.jpeg",
+                "price" : 1399
+                },
+                {
+                "product-id" : 41,
+                "product-name" : "Nayo Kurtis", 
+                "imgSrc" : "img/kurtis.jpeg",
+                "price" : 649
+                },
+                {
+                "product-id" : 42,
+                "product-name" : "Pepe Black Jeans", 
+                "imgSrc" : "img/jeans.jpeg",
+                "price" : 999
+                },
+                {
+                "product-id" : 43,
+                "product-name" : "Indian-Sarees", 
+                "imgSrc" : "img/sarees.jpeg",
+                "price" : 2059
+                },
+                {
+                "product-id" : 44,
+                "product-name" : "Maxx Skirts", 
+                "imgSrc" : "img/skirts.jpeg",
+                "price" : 499
+                },
+                {
+                  "product-id" : 62,
+                  "product-name" : "Casual Anounk Tops", 
+                  "imgSrc" : "img/tops.jpeg",
+                  "price" : 659
+                },
+                {
+                  "product-id" : 63,
+                  "product-name" : "Style Revolte Suits", 
+                  "imgSrc" : "img/womens-coat.jpeg",
+                  "price" : 1499
+                }],
+  "keywords" : [
+                  "clothes, dress, womens wear, party wear, casual, traditional",
+                  "Kurtis",
+                  "Lehangas",
+                  "Dupatas",
+                  "Suits",
+                  "tops",
+                  "skirts",
+                  "sarees"
+                ] 
+},
+{
+  "filter-id" : 7,
+  "products" : [{
+                "product-id" : 45,
+                "product-name" : "Kids-shirt", 
+                "imgSrc" : "img/kids-shirt.jpeg",
+                "price" : 399
+                },
+                {
+                "product-id" : 46,
+                "product-name" : "H&M Round-N T-Shirt", 
+                "imgSrc" : "img/kids-tshirt.jpeg",
+                "price" : 374
+                },
+                {
+                "product-id" : 47,
+                "product-name" : "H&M Tracks", 
+                "imgSrc" : "img/kids-tracks.jpeg",
+                "price" : 699
+                },
+                {
+                "product-id" : 48,
+                "product-name" : "Jackets & Sweaters", 
+                "imgSrc" : "img/kids-jacket.jpeg",
+                "price" : 789
+                },
+                {
+                "product-id" : 49,
+                "product-name" : "Style-Dungarees", 
+                "imgSrc" : "img/dungaress.jpeg",
+                "price" : 749
+                },
+                {
+                "product-id" : 50,
+                "product-name" : "Traditional Kurta-Sets", 
+                "imgSrc" : "img/kids-kurtas.jpeg",
+                "price" : 654
+                },
+                {
+                  "product-id" : 64,
+                  "product-name" : "Tops", 
+                  "imgSrc" : "img/kids-tops.jpeg",
+                  "price" : 602
+                },
+                {
+                  "product-id" : 48,
+                  "product-name" : "Skirts", 
+                  "imgSrc" : "img/kids-skirt.jpeg",
+                  "price" : 599
+                }],
+  "keywords" : [
+                  "clothes, dress, kids wear, casual, Tracks, traditional",
+                  "t-shirts",
+                  "jackets",
+                  "Dungarees",
+                  "Sweaters",
+                  "tops",
+                  "skirts",
+                  "Kurta-Sets"
+                ] 
+}]

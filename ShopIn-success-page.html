@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop.In/Check-out Success</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg text-danger bg-dark p-2" id="navBar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="ShopIn-main.html">
+        <span>Shop.in</span>
+      </a>
+    </div>
+  </nav>
+
+  <section class="thank-you-msg">
+    <button onclick="homePageBtn()">Visit Us again</button>
+  </section>
+
+  <div class="glassy-div-layout"></div>
+  <section class="last-page-success-msg">
+    <i id="green-tick" class="fa-solid fa-circle-check" style="color: #08fb04;"></i>
+    <span id="payment-msg">Payment Recieved</span><br>
+    <button onclick="closeBtn()">Okay</button>
+  </section>
+
+  <script>
+
+    window.addEventListener('load', () => {
+      if(!localStorage.getItem('successMsg')) {
+        document.querySelector('.last-page-success-msg').style.top = '50%';
+        document.querySelector('.glassy-div-layout').style.display = 'block';
+        localStorage.setItem('successMsg',true);
+      }
+    });
+
+    function closeBtn() {
+      document.querySelector('.last-page-success-msg').style = '';
+      document.querySelector('.glassy-div-layout').style = '';
+      localStorage.setItem('cartItems','');
+      localStorage.setItem('finalHTML',''); 
+      localStorage.setItem('checkOutState', '');
+      localStorage.setItem('productMrp','0');
+      document.cookie = "userName=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+    }
+
+    function homePageBtn() {
+      localStorage.setItem('successMsg','');
+      localStorage.setItem('cartItems','');
+      localStorage.setItem('finalHTML',''); 
+      localStorage.setItem('checkOutState', '');
+      localStorage.setItem('productMrp','0');
+      document.cookie = "userName=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+
+      window.location.href = "ShopIn-main.html";
+    }
+  </script>
+</body>
+</html>

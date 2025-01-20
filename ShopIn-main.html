@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop.in</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="icon" href="./Img2/ShopIn-logo.JPG" type="image/x-icon">
+</head>
+<body>
+  <!-- Bootstrap Navigation part -->
+    <nav class="navbar navbar-expand-lg text-danger bg-dark p-2" id="navBar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="ShopIn-main.html"><span>Shop.in</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" role="button" onclick="backToHome()" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" role="button" onclick="displayItems(1)" href="#">Appliances</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" role="button" onclick="displayItems(2)" href="#">Mobiles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" role="button" onclick="displayItems(3)" href="#">Electronics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" role="button" onclick="displayItems(4)" href="#">Foods</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Clothes
+              </a>
+              <ul id="clothes-container" class="dropdown-menu bg-secondary">
+                <li><a class="dropdown-item" role="button" onclick="displayItems(5)" href="#">Mens</a></li>
+                <li><a class="dropdown-item" role="button" onclick="displayItems(6)" href="#">Womens</a></li>
+                <li><a class="dropdown-item" role="button" onclick="displayItems(7)" href="#">Kids</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form id="form" class="d-flex" role="search">
+            <input id="search" class="form-control me-2" type="search"  placeholder=" Search" aria-label="Search">
+            <i id="icon" class="fa-solid fa-magnifying-glass"></i>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Bootstrap Courasel part -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div onclick="displayItems(1)" class="carousel-item active">  <!--friedge-->
+          <img src="./Img2/home-app-1.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div onclick="displayItems(1)" class="carousel-item">  <!--sofa-->
+          <img src="./Img2/home-app-2.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div onclick="displayItems(1)" class="carousel-item">  <!--Mixie-->
+          <img src="./Img2/home-app-3.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div onclick="displayItems(2)" class="carousel-item">    <!--Asus-->
+          <img src="./Img2/electronics-1.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div onclick="displayItems(3)" class="carousel-item">    <!--Asus-->
+          <img src="./Img2/electronics-2.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div onclick="displayItems(3)" class="carousel-item">  <!--laptop-->
+          <img src="./Img2/electronics-3.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div onclick="displayItems(5)" class="carousel-item">  <!--laptop-->
+          <img src="./Img2/mens-1.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div onclick="displayItems(5)" class="carousel-item">    <!--watchs-->
+          <img src="./Img2/mens-2.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div onclick="displayItems(6)" class="carousel-item">    <!--watchs-->
+          <img src="./Img2/womens-1.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div onclick="displayItems(6)" class="carousel-item">  <!--clothes-->
+          <img src="./Img2/womens-2.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div onclick="displayItems(7)" class="carousel-item">   <!--clothes-->
+          <img src="./Img2/kids.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div onclick="displayItems(4)" class="carousel-item">   <!--clothes-->
+          <img src="./Img2/foods.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button id="btn-prev" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button id="btn-nxt" class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+      <!-- Displaying my Output here -->
+      <div id="home-block" class="container">
+        <div class="row" id="main-block">        <!--main-block--> 
+          <!-- Card 1 -->
+          <!-- <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card shadow-sm" style="width: 100%;">
+              <img src="./img/apple-14.jpeg" class="card-img-top rounded" alt="Product Image">
+              <div class="card-body mb-2">
+                <h5 class="card-title text-dark">Apple Iphone 15 pro Max 256Gb</h5>
+                <p class="card-text display-6">&#8377;80,999</p>
+                <button role="button" class="btn bg-dark text-light">Add to Cart</button>
+                <span id="greeting" class="msg"><i class="fa-solid fa-circle-check"></i> Cart added!</span>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+        <!--Overlay div to make the add to cart!-->
+
+      <div id="main-container" class="row justify-content-center">
+        <!-- <h1 id="cookie-h1" class="col-12 text-center mb-4 h"><span id="cookie-name"></span></h1>
+        <div class="cart-container">
+          <p id="para-name">Product Name: <span id="product-name">Apple Iphone 15 Pro Max</span></p>
+          <label id="quantity">Quantity: <button id="minus-btn" onclick="subQuantity()">-</button> <span id="items">0</span> <button id="plus-btn" onclick="plusQuantity()">+</button></label>
+          <p id="para-price">Price: <span id="price">&#8377;1,30,999</span></p>
+          <button id="delBtn">Delete</button>
+        </div>
+
+        <div id="last-btns">
+          <button id="del-all">Clear All</button>
+          <button id="check">Check-Out</button>
+        </div> -->
+      </div>
+
+        <!--For Checkout-Layout!-->
+      <div class="check-out-overlay"></div>
+      <section class="myCart">
+        <h2><i id="go-back" onclick="goBack()" class="fa-solid fa-arrow-left"></i> My Cart</h2>
+    
+        <div class="cart-grid">
+    
+           <div class="flex-product">
+              <!-- <div class="list-of-products">
+                <div class="product-img">
+                  <img src="./img/apple-14.jpeg" alt="">
+                </div>
+        
+                <div class="product-details">
+                  <p class="product-name">Apple iPhone 15 Pro 5G, 128 GB ROM</p>
+                  <p class="product-price">&#8377;130999</p>
+                  <p class="product-quantity">
+                    <label id="qty">Qty: <button class="decrease-btn" onclick="subBtn()">-</button> <span id="counts">1</span> <button class="increase-btn" onclick="plusBtn()">+</button></label>
+                  </p>
+                  <p class="delivery"><i class="fa-solid fa-truck-fast"></i> Standard Delivery Available • Pay and Pick Available</p><hr>
+                  <div class="remove-this">
+                    <button>Remove</button>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+      
+      
+           <div class="check-out-bill">
+              <!-- <h2>ORDER SUMMARY</h2><hr>
+              <p class="total-amount">Total MRP <span class="total-price">&#8377;130999</span></p>
+              <p class="tax">Tax <span>&#8377;0</span></p>
+              <p class="shipping-charges">Shipping Charges <span class="shippings">&#8377;100</span></p><hr>
+              <p class="final-amnt">Total Amount Payable <span class="amount-payable">&#8377;130999</span></p>
+              <button class="proceed-to-pay-btn">PROCEED TO PAY</button> -->
+           </div>
+
+        </div>
+
+        <div class="empty-bag">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p>Your Cart is empty! Let's fill it up shall we?</p>
+          <button onclick="continueShopping()">Continue Shopping</button>
+        </div>
+        
+      </section>
+
+      <!---Section for making global view of our website!-->
+      <section class="global-view">
+        <section class="global-view-product-section">
+
+          <div onclick="backToHome()" class="product-showcase">
+            <a href="#">
+              <img class="demo-cover-img" src="./Img2/sale-img.jpeg" alt="">
+            </a>
+            <span class="prefix-name">Live Offer</span>
+          </div>
+          
+          <div onclick="displayItems(1)" class="product-showcase">
+            <a href="#">
+              <img class="demo-cover-img" src="./Img2/home-1.jpeg" alt="">
+            </a>
+            <span class="prefix-name">home</span>
+          </div>
+
+          <div onclick="displayItems(1)" class="product-showcase">
+            <a href="#">
+              <img class="demo-cover-img" src="./Img2/home-2.jpeg" alt="">
+            </a>
+            <span class="prefix-name">home & electronics</span>
+          </div>
+
+          <div onclick="displayItems(2)" class="product-showcase">
+            <a href="#">
+              <img class="demo-cover-img" src="./Img2/mob-1.jpeg" alt="">
+            </a>
+            <span class="prefix-name">mobiles</span>
+          </div>
+
+          <div onclick="displayItems(2)" class="product-showcase">
+            <a href="#">
+              <img class="demo-cover-img" src="./Img2/mob-2.jpeg" alt="">
+            </a>
+            <span class="prefix-name">accessories</span>
+          </div>
+
+          <div onclick="displayItems(7)" class="product-showcase">
+            <a href="#">
+              <img class="demo-cover-img" src="./Img2/boy-girl.jpeg" alt="">
+            </a>
+            <span class="prefix-name">Kids Spl.</span>
+          </div>
+
+          <div onclick="displayItems(6)" class="product-showcase">
+            <a href="#">
+              <img class="demo-cover-img" src="./Img2/ladies.jpeg" alt="">
+            </a>
+            <span class="prefix-name">womens</span>
+          </div>
+
+          <div onclick="displayItems(5)" class="product-showcase">
+            <a href="#">
+              <img class="demo-cover-img" src="./Img2/male.jpeg" alt="">
+            </a>
+            <span class="prefix-name">mens</span>
+          </div>
+
+          <div onclick="displayItems(3)" class="product-showcase">
+            <a href="#">
+              <img class="demo-cover-img" src="./Img2/gadgets.jpeg" alt="">
+            </a>
+            <span class="prefix-name">gadgets</span>
+          </div>
+
+          <div onclick="displayItems(3)" class="product-showcase">
+            <a href="#">
+              <img class="demo-cover-img" src="./Img2/gadgets-2.jpeg" alt="">
+            </a>
+            <span class="prefix-name">powerbanks</span>
+          </div>
+        </section>
+
+        <section class="home-appliance-collapse-div">
+          <div class="offer-title-block">
+            <i class="fa-solid fa-bolt" style="color: #ffcb0f;"></i>
+            Best Brands for Appliances
+            <i class="fa-solid fa-bolt" style="color: #ffcb0f;"></i>
+          </div>
+
+          <div class="home-appliances-grid-img-show">
+            <div class="image-grid-flex">
+              <div>
+                <div onclick="displayItems(1)">
+                  <img src="./Img2/oven-new.jpeg" alt="">
+                </div>
+                <div onclick="displayItems(1)">
+                  <img src="./Img2/fan-new.jpeg" alt="">
+                </div>
+              </div>
+
+              <div>
+                <div onclick="displayItems(1)">
+                  <img src="./Img2/mixi-new.jpeg" alt="">
+                </div>
+                <div onclick="displayItems(1)">
+                  <img src="./Img2/freezer-new.jpeg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mobile-showcase-section">
+          <div class="offer-title-block">
+            <i class="fa-solid fa-bolt" style="color: #ffcb0f;"></i>
+            Most Popular Smartphones
+            <i class="fa-solid fa-bolt" style="color: #ffcb0f;"></i>
+          </div>
+
+          <div class="grid-layout-smartphones">
+            <div onclick="displayItems(2)">
+              <img src="./Img2/mob-demo1.jpeg" alt="">
+            </div>
+            <div onclick="displayItems(2)">
+              <img src="./Img2/mob-demo2.jpeg" alt="">
+            </div>
+          </div>
+          <div class="flex-layout-smartpones">
+            <div onclick="displayItems(2)">
+              <img src="./Img2/mob-demo3.jpeg" alt="">
+            </div>
+            <div onclick="displayItems(2)">
+              <img src="./Img2/mob-demo4.jpeg" alt="">
+            </div>
+            <div onclick="displayItems(2)">
+              <img src="./Img2/mob-demo5.jpeg" alt="">
+            </div>
+            <div onclick="displayItems(2)">
+              <img src="./Img2/mob-demo6.jpeg" alt="">
+            </div>
+          </div>
+        </section>
+
+        <section class="clothing-block-showcase">
+          <div class="offer-title-block">
+            <i class="fa-solid fa-bolt" style="color: #ffcb0f;"></i>
+              Fashion & Trendy Collections
+            <i class="fa-solid fa-bolt" style="color: #ffcb0f;"></i>
+          </div>
+
+          <div class="four-grid-layout-form">
+            <div class="grid-layout-1">
+              <div class="flex-image-and-para-block">
+                <span class="image-area">
+                  <img src="./Img2/Clothes-homepage-1.jpeg" alt="">
+                </span>
+                <div onclick="displayItems(6)" class="title-msg">
+                  <span class="title-span">Lace Love</span>
+                  <span class="content-span">Elegant lace styles for timeless feminine charm</span>
+                  <span role="button" class="redirect-link-span">SHOP NOW</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="grid-layout-2">
+              <div class="flex-image-and-para-block">
+                <span class="image-area">
+                  <img src="./Img2/Clothes-homepage-2.jpeg" alt="">
+                </span>
+                <div onclick="displayItems(5)" class="title-msg">
+                  <span class="title-span">Fusion Tracks</span>
+                  <span class="content-span">Versatile track pants for effortless sporty vibes</span>
+                  <span role="button" class="redirect-link-span">SHOP NOW</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-layout-3">
+              <div class="flex-image-and-para-block">
+                <span class="image-area">
+                  <img src="./Img2/Clothes-homepage-3.jpeg" alt="">
+                </span>
+                <div onclick="displayItems(7)" class="title-msg">
+                  <span class="title-span">Kids Round-Neck Wear</span>
+                  <span class="content-span">Let's have fun to choose</span>
+                  <span role="button" class="redirect-link-span">SHOP NOW</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-layout-4">
+              <div class="flex-image-and-para-block">
+                <span class="image-area">
+                  <img src="./Img2/Clothes-homepage-4.jpeg" alt="">
+                </span>
+                <div onclick="displayItems(5)" class="title-msg">
+                  <span class="title-span">Mens Classic Shirts</span>
+                  <span class="content-span">Standard patterned for stylish men</span>
+                  <span role="button" class="redirect-link-span">SHOP NOW</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="electronics-block-showcase">
+          <div class="offer-title-block">
+            <i class="fa-solid fa-bolt" style="color: #ffcb0f;"></i>
+              Best Deals for all types of Electronics
+            <i class="fa-solid fa-bolt" style="color: #ffcb0f;"></i>
+          </div>
+
+          <section class="best-offer-electronics">
+            <h1>Deals on mobile accessories from Best Brands...
+              <a onclick="displayItems(3)" class="see-more-link-span" href="#">Explore more</a>
+            </h1>
+
+            <div class="all-electronics-flex">
+              <li class="product-1">
+                <p>Starting ₹349 | Bestselling headphones</p>
+                <img src="./Img2/electronics-home-1.jpg" alt="">
+                <span class="see-more-link-span" role="button" onclick="displayItems(3)">See all offers</span>
+              </li>
+
+              <li class="product-2">
+                <p>Starting ₹349 | Bestselling headphones</p>
+                <img src="./Img2/electronics-home-3.jpg" alt="">
+                <span class="see-more-link-span" role="button" onclick="displayItems(3)">See all offers</span>
+              </li>
+
+              <li class="product-3">
+                <p>Starting ₹349 | Bestselling headphones</p>
+                <img src="./Img2/electronics-home-2.jpg" alt="">
+                <span class="see-more-link-span" role="button" onclick="displayItems(3)">See all offers</span>
+              </li>
+
+              <li class="product-4">
+                <p>Starting ₹349 | Bestselling headphones</p>
+                <img src="./Img2/electronics-home-5.jpg" alt="">
+                <span class="see-more-link-span" role="button" onclick="displayItems(3)">See all offers</span>
+              </li>
+            </div>
+          </section>
+        </section>
+
+        <section class="foods-block-showcase">
+          <div class="offer-title-block">
+            <i class="fa-solid fa-bolt" style="color: #ffcb0f;"></i>
+            Order our best food options
+            <i class="fa-solid fa-bolt" style="color: #ffcb0f;"></i>
+          </div>
+
+          <div class="container mt-5 my-food-review">
+            <div class="carousel-container food-section-carousel">
+              <ul class="product-list list-unstyled d-flex">  <!--Make this <ul> to flex so that its items(<li>) where we can modify it to not resize when minimizing the screen-->
+                <!--Food list-1-->
+                <li class="product-item" onclick="displayItems(4)">
+                  <div class="card">
+                    <img class="card-img-top" src="./Img2/Mexican-burger.jpg" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Mexican Chicken Burger</h5>
+                      <p class="card-text small mt-0 mb-1">
+                        <img class="food-varient-icon" src="./Img2/Non-veg-icon.jpg" alt="">
+                        <span class="small pt-5">Non veg</span>
+                      </p>
+                      <p class="card-text price-list mb-2">₹358</p>
+                      <p class="card-text small about-text">Best-seller combo of classic chicken tandoori zinger</p>
+                      <div class="rating">★★★★☆</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-item" onclick="displayItems(4)">
+                  <div class="card">
+                    <img class="card-img-top" src="./Img2/Blazing-pizza.jpg" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Blazing Chicken Pizza</h5>
+                      <p class="card-text small mt-0 mb-1">
+                        <img class="food-varient-icon" src="./Img2/Non-veg-icon.jpg" alt="">
+                        <span class="small pt-5">Non veg</span>
+                      </p>
+                      <p class="card-text price-list mb-2">₹344</p>
+                      <p class="card-text small about-text">Molten Cheese indulgence with combination of chicken keema.</p>
+                      <div class="rating">★★★★☆</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-item" onclick="displayItems(4)">
+                  <div class="card">
+                    <img class="card-img-top" src="./img/briyani.jpeg" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Fried Chicken Briyani</h5>
+                      <p class="card-text small mt-0 mb-1">
+                        <img class="food-varient-icon" src="./Img2/Non-veg-icon.jpg" alt="">
+                        <span class="small pt-5">Non veg</span>
+                      </p>
+                      <p class="card-text price-list mb-2">₹300</p>
+                      <p class="card-text small about-text">Tasty and spicy Chicken Briyani with Chicken fry.</p>
+                      <div class="rating">★★★★★</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-item" onclick="displayItems(4)">
+                  <div class="card">
+                    <img class="card-img-top" src="./img/dosa.jpeg" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Indian Spl. Dosa's</h5>
+                      <p class="card-text small mt-0 mb-1">
+                        <img class="food-varient-icon" src="./Img2/Veg-icon.jpg" alt="">
+                        <span class="small pt-5">Veg</span>
+                      </p>
+                      <p class="card-text price-list mb-2">₹153</p>
+                      <p class="card-text small about-text">Tasty and Crispy South-Indian favourite reciepe Dosa</p>
+                      <div class="rating">★★★★☆</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-item" onclick="displayItems(4)">
+                  <div class="card">
+                    <img class="card-img-top" src="./img/meals.jpeg" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Indian Full Meals</h5>
+                      <p class="card-text small mt-0 mb-1">
+                        <img class="food-varient-icon" src="./Img2/Veg-icon.jpg" alt="">
+                        <span class="small pt-5">Veg</span>
+                      </p>
+                      <p class="card-text price-list mb-2">₹215</p>
+                      <p class="card-text small about-text">South-Indian Meals with 8 varieties of Spl. items.</p>
+                      <div class="rating">★★★★☆</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-item" onclick="displayItems(4)">
+                  <div class="card">
+                    <img class="card-img-top" src="./img/barbeque.jpeg" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Pepper Barbeque Chicken</h5>
+                      <p class="card-text small mt-0 mb-1">
+                        <img class="food-varient-icon" src="./Img2/Non-veg-icon.jpg" alt="">
+                        <span class="small pt-5">Non veg</span>
+                      </p>
+                      <p class="card-text price-list mb-2">₹449</p>
+                      <p class="card-text small about-text">The wonderful lemon pepper marinate is left on the pepper chicken for the entire night.</p>
+                      <div class="rating">★★★★★</div>
+                    </div>
+                  </div>
+                </li>
+                <div class="product-item product-item-see-all" onclick="displayItems(4)">
+                  <i id="see-all-icon" class="fa-solid fa-circle-right"></i>
+                  <p>See all</p>
+                </div>
+              </ul>
+            </div>
+
+            <!--Carousel buttons-->
+            <button class="carousel-control-prev" type="button" onclick="moveCarousel('back')">
+              <span class="carousel-control-prev-icon" aria-hidden="true">
+                <i class="fa-solid fa-backward" style="color: grey; font-size: 35px;"></i>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" onclick="moveCarousel('front')">
+              <span class="carousel-control-next-icon" aria-hidden="true">
+                <i class="fa-solid fa-forward" style="color: grey; font-size: 35px;"></i>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+
+      </section>
+
+      <!--Footer-section-->
+      <footer class="footer-section-all-page">
+        <h2 class="footer-title-text">
+          <span class="unique-text">Our Unique</span>
+          <span class="offering-text">Offerings</span>
+        </h2>
+
+        <div class="grid-column-unique-offer-block">
+          <div class="grid-show-offer-block-1">
+            <img src="./Img2/unique-offer-1.jpg" alt="">
+            <p class="offer-text">Free Alterations</p>
+          </div>
+          <div class="grid-show-offer-block-1">
+            <img src="./Img2/unique-offer-2.jpg" alt="">
+            <p class="offer-text">Easy Exchange & Return</p>
+          </div>
+          <div class="grid-show-offer-block-1">
+            <img src="./Img2/unique-offer-3.jpg" alt="">
+            <p class="offer-text">Express Delivery</p>
+          </div>
+          <div class="grid-show-offer-block-1">
+            <img src="./Img2/unique-offer-4.jpg" alt="">
+            <p class="offer-text">Personalized Engraving</p>
+          </div>
+          <div class="grid-show-offer-block-1">
+            <img src="./Img2/unique-offer-5.jpg" alt="">
+            <p class="offer-text">Curated Styling Advance</p>
+          </div>
+          <div class="grid-show-offer-block-1">
+            <img src="./Img2/unique-offer-6.jpg" alt="">
+            <p class="offer-text">Click & Collect</p>
+          </div>
+        </div>
+
+        <hr> 
+        
+        <div class="secure-payment-mail-section">
+          <div class="secure-payment-port-combination">
+            <div class="secure-payment-port">
+              <p style="line-height: 4em; margin-top: -15px;" class="card-title">Pay securely by</p>
+              <p class="card-img">
+                <img src="./Img2/card-1jpg.webp" alt="">
+                <img src="./Img2/card-2jpg.webp" alt="">
+                <img src="./Img2/card-3jpg.webp" alt="">
+                <img src="./Img2/card-4jpg.webp" alt="">
+              </p>
+            </div>
+  
+            <div class="secure-payment-port">
+              <p class="card-title">Verified by</p>
+              <p class="card-img">
+                <img src="./Img2/card-5jpg.webp" alt="">
+                <img src="./Img2/card-6jpg.webp" alt="">
+                <img src="./Img2/card-7jpg.webp" alt="">
+                <img src="./Img2/card-8jpg.webp" alt="">
+              </p>
+            </div>
+          </div>
+
+          <div class="mail-subscription">
+            <h4>Subscribe to our awesome emails.</h4>
+            <p>Get our latest offers and news straight in your inbox.</p>
+
+            <div class="mail-input-button">
+              <input type="email" placeholder="Please enter your email address" name="" id="email-box-last">
+              <button id="email-subs-btn">Subscribe</button>
+            </div>
+            <p class="email-validation-quotation">Please Enter a valid email</p>
+          </div>
+        </div>
+
+        <div class="final-logo-privacy-policy">
+          <img src="./Img2/ShopIn-logo.JPG" alt="" onclick="goToTopEvent()">
+          <span class="card-text small text-secondary ms-5">Terms & Conditions - Privacy Policy</span>
+        </div>
+      </footer>
+
+
+
+
+      <section class="go-to-top-link">
+        <button title="Go to top" id="go-to-top-btn" onclick="goToTopEvent()">
+          <i class="fa-solid fa-circle-chevron-up"></i>
+        </button>
+      </section>
+
+       
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./ShopIn.js"></script>
+</body>
+</html>

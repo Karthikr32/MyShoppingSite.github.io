@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop.in-Check-Out</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg text-danger bg-dark p-2" id="navBar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="ShopIn-main.html">
+        <span>Shop.in</span>
+      </a>
+    </div>
+  </nav>
+
+  <section class="check-out-form-bill">
+    <section class="bill-details">
+
+      <div class="make-it-unscroll">
+   <!-- <div class="product-flex-lists">
+          <div class="product-img-name">
+            <img src="./img/samsung-gal.jpeg" alt="">
+            <span class="quantity-count">1</span>
+            <p>Samsung Galaxy S24 Ultra 5G 12GB RAM</p>
+          </div>
+          <p><span>&#8377;121999</span></p>
+        </div> -->
+
+        <!-- <div class="bill-summary">
+          <p><span class="total-items-count">Subtotal • 3 items</span><span class="sub-price">&#8377;121899</span></p>
+          <p class="shipping-cost">Shipping<span class="ship-cost">&#8377;100</span></p>
+          <p class="grand-total">TOTAL<span class="final-total">&#8377;121999</span></p>
+        </div> -->
+      </div>
+    </section>
+
+    <section class="form-details">
+
+      <!-- for contact -->
+      <div class="contact-block">
+        <h2>Contact</h2>
+        <div class="email-input-div">
+          <label for="">
+            <span class="input-placeholder">Email</span>
+            <input type="email" placeholder="Email" id="email">
+          </label>
+        </div>
+        <span class="validate-purpose"></span>
+      </div>
+
+      <div class="empty-div gap-div"></div>
+      
+      <!-- for delivery -->
+      <div class="delivery-block">
+        <h2>Delivery</h2>
+        <div class="country-select email-input-div">
+          <label for="">
+            <span style=" color: #727171c1; font-size: 14px; padding-left: 7px;">Country/Region</span>
+          <select name="country" class="select" id="">
+            <option selected value="India">India</option>
+          </select>
+          </label>
+        </div>
+
+        <div class="name-divs">
+          <div class="first-name email-input-div">
+            <label for="">
+              <span class="input-placeholder">First name</span>
+              <input type="text" placeholder="First name" id="inp">
+            </label>
+          </div>
+          <div class="first-name email-input-div">
+            <label for="last-name">
+              <span class="input-placeholder">Last name</span>
+              <input type="text" placeholder="Last name" id="inp">
+            </label>
+          </div>
+        </div>
+
+        <div class="address-div email-input-div">
+          <label for="">
+            <span class="input-placeholder">Address</span>
+            <input type="text" placeholder="Address" id="user-address">
+          </label>
+        </div>
+
+        <div class="appartment-detail-div email-input-div">
+          <label for="">
+            <span class="input-placeholder">Appartment,street name,etc.(Optional)</span>
+            <input type="text" placeholder="Appartment,street name,etc.(Optional)" id="user-appart">
+          </label>
+        </div>
+
+        <div class="city-div email-input-div">
+          <label for="">
+            <span class="input-placeholder">City</span>
+            <input type="text" placeholder="City" id="user-city">
+          </label>
+        </div>
+
+        <div class="phone-num email-input-div">
+          <label for="">
+            <span class="input-placeholder">Phone</span>
+            <input type="number" placeholder="Phone" id="user-num1">
+          </label>
+        </div>
+        <span class="validate-purpose-1"></span>
+
+
+        <div class="empty-div gap-div"></div>
+
+        <div class="shipping-method-block">
+          <h5>Shipping method</h5>
+          <div class="shipping-method email-input-div">
+            <span id="delivery">Deliver Rate</span>
+            <span id="shipping-price">&#8377;100</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="empty-div gap-div"></div>
+
+      <div class="payment-block">
+        <h2>Payment</h2>
+        <p>All transactions are secure and encrypted.</p>
+
+        <div class="payment-process-method">
+          <label>
+            <input type="radio" name="payment" id="dummy-radio-btn" checked>
+            <span style="vertical-align: middle;" id="delivery">Credit card</span>
+          </label>
+          <span id="shipping-price">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmi_-lvlu2eM8cbedg0UsncVuk4DQaQgUmzw&s" alt="">
+          </span>
+        </div>
+
+        <!--1st Option-->
+        <div class="payment-card-details">
+          <div class="card-number email-input-div">
+            <label for="">
+              <span class="input-placeholder">Card number</span>
+              <input type="number" placeholder="Card number" id="card-num">
+            </label>
+          </div>
+
+          <div class="card-expire-date name-divs">
+            <div class="first-name email-input-div">
+              <label for="">
+                <span class="input-placeholder">Expiration date (MM/YY)</span>
+                <input type="text" placeholder="Expiration date (MM/YY)" id="inp">
+              </label>
+            </div>
+            <div class="first-name email-input-div">
+              <label for="last-name">
+                <span class="input-placeholder">Security code</span>
+                <input type="number" placeholder="Security code" id="inp">
+              </label>
+            </div>
+          </div>
+
+          <div class="card-number email-input-div">
+            <label for="">
+              <span class="input-placeholder">Name on card</span>
+              <input type="text" placeholder="Name on card" id="inp">
+            </label>
+          </div>
+
+          <div class="check-delivery-address">
+            <input type="checkbox" name="" id="if-checked" checked>
+            <label>Use shipping address as billing address</label>
+          </div>
+
+          <div id="if-checked-hide" class="empty-div gap-div"></div>
+
+          <!--2nd Option If CheckBox :checked!-->
+          <div id="other-address" class="delivery-block">
+            <h5>Billing address</h5>
+            <div class="country-select email-input-div">
+              <label for="">
+                <span style=" color: #727171c1; font-size: 14px; padding-left: 7px;">Country/Region</span>
+              <select name="country" class="select" id="">
+                <option selected value="India">India</option>
+              </select>
+              </label>
+            </div>
+    
+            <div class="name-divs">
+              <div class="first-name email-input-div">
+                <label for="">
+                  <span class="input-placeholder">First name</span>
+                  <input type="text" placeholder="First name" id="inp">
+                </label>
+              </div>
+              <div class="first-name email-input-div">
+                <label for="last-name">
+                  <span class="input-placeholder">Last name</span>
+                  <input type="text" placeholder="Last name" id="inp">
+                </label>
+              </div>
+            </div>
+    
+            <div class="address-div email-input-div">
+              <label for="">
+                <span class="input-placeholder">Address</span>
+                <input type="text" placeholder="Address" id="user-address">
+              </label>
+            </div>
+    
+            <div class="appartment-detail-div email-input-div">
+              <label for="">
+                <span class="input-placeholder">Appartment,street name,etc.(Optional)</span>
+                <input type="text" placeholder="Appartment,street name,etc.(Optional)" id="user-appart">
+              </label>
+            </div>
+    
+            <div class="city-div email-input-div">
+              <label for="">
+                <span class="input-placeholder">City</span>
+                <input type="text" placeholder="City" id="user-city">
+              </label>
+            </div>
+    
+            <div class="phone-num email-input-div">
+              <label for="">
+                <span class="input-placeholder">Phone</span>
+                <input type="number" placeholder="Phone" id="user-num2">
+              </label>
+            </div>
+            <span class="validate-purpose-2"></span>
+          </div>
+        </div>
+
+        <!---2nd option-->
+        <div class="tobby-shipping-method">
+          <label>
+            <input type="radio" name="payment" id="other-radio-btn">
+            <span style="vertical-align: middle;" id="delivery">Pay in 4 with Tabby. No interest. No fees</span>
+          </label>
+          <span id="tobby-img">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHM0IeLMql0Le84N24wqO3hRPKvV6MV_s0a833IZXeK8xoX8Nq" alt="">
+          </span>
+        </div>
+
+        <div class="tobbey-details">
+          <span>
+            <i id="wallet-icon" class="fa-solid fa-wallet"></i>
+          </span>
+          <p>After clicking “Pay now”, you will be redirected to Pay in 4 with Tabby. No interest. No fees to complete your purchase securely.</p>
+        </div>
+      </div>
+
+      <div class="pay-btn">
+        <button onclick="payBtn()">Pay now</button>
+      </div>
+    </section>
+  </section>
+
+
+
+
+  <script>
+    // NOTE: If using jQuery in JS Stack it before the regular JS scripts!!!
+    $(document).ready(() => {
+      const cardMode = $('#dummy-radio-btn');
+      const paymentCardDetails = $('.payment-card-details');
+
+      const tobbeyMode = $('#other-radio-btn');
+      const tobbeyDetails = $('.tobbey-details');
+      
+
+     // paymentCardDetails.hide();  // Initially hiding the presence of card detials div!
+      tobbeyDetails.hide();  // Initially hiding the presence of card detials div!
+
+      // adding 'change' event listener for "radio" btn  to watch whether there is any changes in btn like(:checked/ :unchecked)
+      cardMode.on('change', () => {
+        if(cardMode.is(':checked')) {  // if :checked means, slideDown...using .stop() function to to trigger this function immediately to happen! without any delay or stuck in stack by passing (true, true) helps to proceed immidiately!
+          paymentCardDetails.stop(true, true).slideDown(1000);
+          tobbeyDetails.stop(true, true).slideUp(1000);
+        }
+        else {
+          paymentCardDetails.stop(true, true).slideUp(1000);
+          tobbeyDetails.stop(true, true).slideDown(1000);
+        }
+      });
+
+      tobbeyMode.on('change', () => {
+        if(tobbeyMode.is(':checked')) {
+          tobbeyDetails.stop(true, true).slideDown(1000);
+          paymentCardDetails.stop(true, true).slideUp(1000);
+        }
+        else {
+          tobbeyDetails.stop(true, true).slideUp(1000);
+          paymentCardDetails.stop(true, true).slideDown(1000);
+        }
+      });
+
+      const checkBox = $('#if-checked');
+      const otherAdd = $('#other-address');
+
+      otherAdd.hide();
+      $('#if-checked-hide').hide();
+      
+      checkBox.on('change', () => {
+        if(checkBox.is(':checked')) {
+          otherAdd.stop(true, true).slideUp(1000);
+          $('#if-checked-hide').fadeOut(970);
+        }
+        else {
+          otherAdd.stop(true, true).slideDown(1000);
+          $('#if-checked-hide').fadeIn(1000);
+        }
+      });
+    });
+
+
+
+    const form = document.querySelector('.form-details');
+    // The Method below is called event delegation is Much Efficient!
+    form.addEventListener('input', (e) => {    // this form eventListener specifically listen for 'input' evant
+      if(e.target.tagName === 'INPUT') {
+        const input = e.target;
+        const span = input.closest('label').querySelector('.input-placeholder');
+
+        if(input.value.trim() === '') {
+          span.style.display = 'none';
+          input.style.height = '42px';
+        }
+        else {
+          span.style.display = 'block';
+          span.style.marginBottom = "1px";
+          input.style.height = '19px';
+        }
+
+        // Function to Validate User Email--
+        if(input.id === 'email') {
+          let userMail = input.value;
+          let emailRegex = /^[a-zA-Z0-9.-_]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    
+          if(emailRegex.test(userMail) && userMail !== '') {
+            document.querySelector('.validate-purpose').innerHTML = '';
+            input.closest('.email-input-div').style = "";
+          }
+          else{
+            document.querySelector('.validate-purpose').innerHTML = `Enter a valid email`;
+            input.closest('.email-input-div').style.cssText = `border-color: red;  box-shadow: 0px 0px 2px red;`;
+
+            // This will Work as Expects bcoz, "input.closest('.email-input-div')" is an DOM element..so, it has .closest() DOM method!
+            // But "userMail.closest('.email-input-div')" will not work Bcoz, userMail is always a string!...Its a collection of Email-input's value!
+          }
+        }
+
+        let phNumRegex = /^[789]\d{9}$/;   // \d{9}: After the first digit, it must be followed by exactly 9 digits (\d is shorthand for any digit, and {9} ensures there are 9 digits).
+
+        // Function to Validate User's Phone-num1--
+        if(input.id === 'user-num1') {
+          let phoneNum1 = input.value;
+
+          if((phoneNum1.length >= 10) && (phNumRegex.test(phoneNum1))) {
+            document.querySelector('.validate-purpose-1').innerHTML = '';
+            input.closest('.email-input-div').style = "";
+          }
+          else {
+            document.querySelector('.validate-purpose-1').innerHTML = `Enter a valid phone number`;
+            input.closest('.email-input-div').style.cssText = `border-color: red;  box-shadow: 0px 0px 2px red;`;
+          }
+        }
+
+       // Function to Validate User's Phone-num2--
+        if(input.id === 'user-num2') {
+          let phoneNum2 = input.value;
+
+          if((phoneNum2.length >= 10) && (phNumRegex.test(phoneNum2))) {
+            document.querySelector('.validate-purpose-2').innerHTML = '';
+            input.closest('.email-input-div').style = "";
+          }
+          else {
+            document.querySelector('.validate-purpose-2').innerHTML = `Enter a valid phone number`;
+            input.closest('.email-input-div').style.cssText = `border-color: red;  box-shadow: 0px 0px 2px red;`;
+          }
+        }
+      }
+    });
+
+    // Building logic for Bill summary!
+    let totalMRP = 0;
+    let cartItems = JSON.parse(localStorage.getItem('cartItems') || '[]');
+
+    // Function to get Cookie 
+  function getCookie(cName) {
+    let myCookie = cName+ '=';  // setting up myCookie to get search for...
+    const decodedCookie = decodeURIComponent(document.cookie);
+    // decoded cookie la iruka ; padi split pannren and that signifies as an array!
+  
+    // Making split up cookie with signing ";" ==> ,
+    const cookieArray = decodedCookie.split(';');  // ['name=value', 'expires=date', 'path']
+
+    // using loop to extract values! Bcoz all the key:value of document.cookie is now an Array!
+    for(let i = 0; i < cookieArray.length; i++) {
+      const currentCookie = cookieArray[i].indexOf(myCookie);
+      if(currentCookie !== -1) {
+        let value = cookieArray[i].substring(cookieArray[i].indexOf('=')+1);
+        if(value === '') {
+          continue;
+        }
+        else{
+          return value;
+        }
+      }
+    }
+    return '';   // if empty means return that empty....only after the loop finishes!
+  }
+
+  const myCookie = getCookie('username');
+
+    if(cartItems === null || cartItems.length === 0 || (myCookie === '' && myCookie === null)) {
+      document.querySelector('.check-out-form-bill').innerHTML = '';
+      window.location.href = 'ShopIn-main.html';
+    }
+    else {
+      let generatedHTML = '';
+      cartItems.forEach(product => {
+        generatedHTML += `<div class="product-flex-lists">
+                            <div class="product-img-name">
+                              <img src="${product.img}" alt="">
+                              <span class="quantity-count">${product.quantity}</span>
+                              <p>${product.name}</p>
+                            </div>
+                            <p><span>&#8377;${Number(product.price) * Number(product.quantity)}</span></p>
+                          </div>`
+      });
+
+      const listOfProducts = document.querySelector('.make-it-unscroll');
+      listOfProducts.innerHTML = generatedHTML;
+
+      totalMRP = 0;
+      const shippingPrice = 100;
+      let billHTML = '';
+
+      cartItems.forEach(product => {
+        let productCost = Number(product.quantity) * Number(product.price);
+        totalMRP += productCost;
+      });
+
+      billHTML += `<div class="bill-summary">
+                     <p><span class="total-items-count">Subtotal • ${cartItems.length} items</span><span class="sub-price">&#8377;${totalMRP}</span></p>
+                     <p class="shipping-cost">Shipping<span class="ship-cost">&#8377;${shippingPrice}</span></p>
+                     <p class="grand-total">TOTAL<span class="final-total">&#8377;${totalMRP + shippingPrice}</span></p>
+                   </div>`;
+
+      listOfProducts.innerHTML += billHTML;
+    }
+
+    function payBtn() {
+      const email = document.getElementById('email');
+      const phNum1 = document.getElementById('user-num1');
+      const userAddress = document.getElementById('user-address');
+      const userCity = document.getElementById('user-city');
+      const userAppart = document.getElementById('user-appart');
+
+
+      if(email.value === '' || phNum1.value === '' || userAddress.value === '' || userAppart.value === '' || userCity.value === '') {
+        alert('Please fill the neccessary input\'s for deliery purpose');
+
+        // For E-mail
+        email.closest('.email-input-div').style.cssText = `border-color: red;  box-shadow: 0px 0px 2px red;`;
+        document.querySelector('.validate-purpose').innerHTML = `Enter a valid email`;
+
+        // For Phone--
+        phNum1.closest('.email-input-div').style.cssText = `border-color: red;  box-shadow: 0px 0px 2px red;`;
+        document.querySelector('.validate-purpose-1').innerHTML = `Enter a valid phone number`;
+
+        userAddress.closest('.email-input-div').style.cssText = `border-color: red;  box-shadow: 0px 0px 2px red;`;
+        userAppart.closest('.email-input-div').style.cssText = `border-color: red;  box-shadow: 0px 0px 2px red;`;
+        userCity.closest('.email-input-div').style.cssText = `border-color: red;  box-shadow: 0px 0px 2px red;`;
+      }
+      else {
+        window.location.href = "ShopIn-success-page.html";
+      }
+    }
+  </script>
+</body>
+</html>
